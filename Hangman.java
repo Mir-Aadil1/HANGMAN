@@ -158,13 +158,14 @@ public class Hangman {
         }
         System.out.println();
     }
-
-    public static void printMissedGuesses(char[] misses) {
-
-        for (char miss : misses) {
-            System.out.print(" " + miss);
+public static void printMissedGuesses(char[] misses) {
+        for (int i = 0; i < misses.length; i++) {
+            if (misses[i] != '\u0000') {
+                System.out.print(" " + misses[i]);
+            }
         }
     }
+    
     public static void clearScreen() {
         for (int i = 0; i < 50; i++) System.out.println();
     }
