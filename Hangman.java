@@ -109,7 +109,7 @@ public class Hangman {
                 missedGuesses[misses] = guess;
                 misses++;
             }
-
+                clearScreen();
             if (Arrays.equals(placeholders, word.toCharArray())) {
                 System.out.print(gallows[misses]);
                 System.out.print("\nWord:   ");
@@ -120,6 +120,7 @@ public class Hangman {
         }
 
         if (misses == 6) {
+            clearScreen();
             System.out.print(gallows[6]);
             System.out.println("\nRIP!");
             System.out.println("\nThe word was: '" + word + "'");
