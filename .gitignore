@@ -1,0 +1,24 @@
+# Ignore IDE-specific files and directories
+.idea/
+*.iml
+
+# Ignore build output directories
+out/
+
+# Ignore compiled class files
+*.class
+
+# Ignore logs
+*.log
+
+# Ignore package files
+*.jar
+*.war
+*.ear
+
+# OS-specific files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# Ignore virtual machine crash logs
+hs_err_pid*
